@@ -39,6 +39,26 @@ Another receiver application for iOS is being Beta tested here: https://testflig
 Apple currently does not expose suitable APIs to receive any other transmission method for drone ID signals than BT4 legacy advertising.
 I.e. current versions of iOS (up to and including 15) do not support receiving BT5 Long Range + Extended Advertising, Wi-Fi NaN nor Wi-Fi Beacon.
 
+#### iOS Integration
+
+This repository now includes two complete solutions for integrating OpenDroneID into iOS applications:
+
+1. **iOS Framework** (`ios-framework/`) - Direct C library wrapper with Swift examples
+   - Build script for creating iOS framework
+   - Bridging header for C to Swift interoperability
+   - Comprehensive Swift usage examples
+   - Minimal overhead, direct C API access
+
+2. **Swift Library** (`swift-library/`) - Complete Swift rewrite with type safety
+   - Pure Swift API with modern Swift conventions
+   - Objective-C bridge layer for C library access
+   - Type-safe enums and structs
+   - Swift error handling with throws/catch
+   - Swift Package Manager support
+   - 10+ comprehensive usage examples
+
+See [IOS_INTEGRATION.md](IOS_INTEGRATION.md) for detailed documentation, comparison, and usage examples for both approaches.
+
 ### WireShark
 Examples on how to use the WireShark PC application to pick up and dissect open drone ID messages (both WiFi and Bluetooth) are available here: https://github.com/opendroneid/wireshark-dissector.  
 

@@ -1,0 +1,4 @@
+module OpenDroneIDObjC {
+    header "OpenDroneIDObjC.h"
+    export *
+}
